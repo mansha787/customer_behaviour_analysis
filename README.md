@@ -1,5 +1,5 @@
 
-# Customer Shopping Behavior Analysis
+# Customer Shopping Behaviour Analysis
 
 This repository contains an end-to-end data analytics project examining 3,900 customer transaction records to uncover shopping patterns, optimize marketing strategies, and drive business revenue. The project integrates Python for exploratory data analysis (EDA) and feature engineering, MySQL for database management and analytical querying, and Power BI for interactive dashboard visualization.
 
