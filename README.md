@@ -78,3 +78,23 @@ The project addresses 10 key business inquiries using structured SQL queries in 
 ├── customer_shopping_behavior.ipynb                     # Data cleaning & MySQL loading notebook
 ├── queries.sql                                          # MySQL analytical query suite (Q1-Q10)
 └── README.md                                            # Technical documentation & project summary
+
+## Setup & Execution Guide
+**Prerequisites**
+Python 3.11+
+MySQL Server 8.0+
+Power BI Desktop
+
+## Installation & Execution
+1.Environment Setup:
+pip install pandas numpy mysql-connector-python sqlalchemy
+
+2.Data Pipeline:
+Open and execute customer_shopping_behavior.ipynb in Jupyter Notebook.
+Ensure local MySQL database project_2 exists prior to executing database export cells.
+
+3.SQL Analytics:
+Run the SQL scripts in queries.sql within MySQL Workbench or your preferred database client.
+
+4.Power BI Dashboard:
+Open the report file in Power BI Desktop to inspect visual charts, revenue breakdowns, and dynamic filters.
