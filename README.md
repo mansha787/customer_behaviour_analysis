@@ -64,22 +64,102 @@ The project addresses 10 key business inquiries using structured SQL queries in 
 
 ---
 
+
 ## Repository Structure
 
 ```text
-├── [Content_Types].xml                                  # Power BI package configuration
-├── DataModel                                            # Power BI dataset metadata & schema definition
-├── DiagramLayout                                        # Power BI visual layout definition
-├── Report/                                              # Power BI report visual layout assets
-│   ├── Layout                                           # Report page canvas configuration
-│   └── StaticResources/SharedResources/BaseThemes/     
-│       └── CY26SU05.json                                # Custom visual palette theme file
-├── customer_shopping_behavior.csv                       # Raw source dataset (3,900 rows)
-├── customer_shopping_behavior.ipynb                     # Data cleaning & MySQL loading notebook
-├── queries.sql                                          # MySQL analytical query suite (Q1-Q10)
-└── README.md                                            # Technical documentation & project summary
+Customer-Shopping-Behavior-Analysis/
+│
+├── customer_shopping_behavior.csv
+│   └── Raw source dataset (3,900 rows)
+│
+├── customer_behaviour_v1.ipynb
+│   └── Data cleaning, feature engineering & MySQL loading
+│
+├── sql_analysis.sql
+│   └── MySQL analytical query suite (Q1–Q10)
+│
+├── Customer_Behaviour_Dashboard.pbix
+│   └── Power BI interactive dashboard
+│
+├── Customer-Shopping-Behavior-Analysis.pptx
+│   └── Project presentation
+│
+└── README.md
+    └── Technical documentation & project summary
+```
 
 ---
+
+## Setup & Execution Guide
+
+### Prerequisites
+
+- Python 3.11+
+- MySQL Server 8.0+
+- MySQL Workbench
+- Power BI Desktop
+- Jupyter Notebook
+
+### 1. Clone the Repository
+
+```bash
+git clone <your-repository-url>
+cd Customer-Shopping-Behavior-Analysis
+```
+
+### 2. Install Python Dependencies
+
+```bash
+pip install pandas numpy sqlalchemy mysql-connector-python jupyter
+```
+
+### 3. Run the Jupyter Notebook
+
+Open:
+
+```text
+customer_behaviour_v1.ipynb
+```
+
+Run the notebook to:
+
+- Load the raw CSV
+- Perform data cleaning
+- Handle missing values
+- Create engineered features
+- Connect to MySQL
+- Load the processed data into the `customer` table
+
+### 4. Set Up MySQL
+
+Create the database:
+
+```sql
+CREATE DATABASE project_2;
+```
+
+Then configure your MySQL credentials in the notebook.
+
+### 5. Run SQL Analysis
+
+Open:
+
+```text
+sql_analysis.sql
+```
+
+in MySQL Workbench and execute the Q1–Q10 business analysis queries.
+
+### 6. Open the Power BI Dashboard
+
+Open:
+
+```text
+Customer_Behaviour_Dashboard.pbix
+```
+
+Refresh the data connection if required.
 
 ## Setup & Execution Guide
 **Prerequisites**
