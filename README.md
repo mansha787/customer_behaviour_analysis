@@ -79,6 +79,8 @@ The project addresses 10 key business inquiries using structured SQL queries in 
 ├── queries.sql                                          # MySQL analytical query suite (Q1-Q10)
 └── README.md                                            # Technical documentation & project summary
 
+---
+
 ## Setup & Execution Guide
 **Prerequisites**
 Python 3.11+
